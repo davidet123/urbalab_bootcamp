@@ -28,9 +28,8 @@ if (resto % 7 < 5 && resto >= 0) {
 } */
 
 
-const password = "test123"
+/* const password = "test123"
 const intentosTotales = 3
-let intento = 0
 
 for (let i = 1; i <= intentosTotales; i++) {
 
@@ -43,4 +42,35 @@ for (let i = 1; i <= intentosTotales; i++) {
   if (i == intentosTotales) {
     console.log("contraseña equivocada");
   }
+} */
+
+//13
+
+let valor1 = parseInt(prompt("Primer número"));
+let valor2 = parseInt(prompt("Segundo número"));
+
+let operacion = prompt("Operación")
+
+switch (operacion) {
+  case "+":
+    console.log(valor1 + valor2);
+    break; 
+  case "-":
+    console.log(valor1 - valor2);
+    break; 
+  case "*":
+    console.log(valor1 * valor2);
+    break; 
+  case "/":
+    console.log(valor1 / valor2);
+    break; 
+  case "^":
+    console.log(valor1 ** valor2);
+    break; 
+  case "%":
+    console.log(valor1 % valor2);
+    break; 
+
+
+
 }
