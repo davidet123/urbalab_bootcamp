@@ -84,7 +84,7 @@ Aquí te mostramos que necesita cada figura:
 • Cuadrado: lado * lado
  */
 
-
+/* 
 let figura = prompt("Dime una figura").toLowerCase();
 
 
@@ -124,4 +124,104 @@ switch (figura) {
     console.log("Figura equivocada")
     break;
 
+} */
+
+/* class Test  {
+
+  constructor(texto) {
+    this.texto = texto
+  }
+
+  imprimir() {
+    console.log(this.texto)
+  }
 }
+
+prueba1 = new Test("Hola")
+
+prueba1.imprimir() */
+
+// Ejercicios JS Vanilla II
+
+// 2
+/* 
+let totalNumeros = parseInt(prompt("Total de valores"))
+let rangoMin = parseInt(prompt("Mínimo"));
+let rangoMax = parseInt(prompt("Máximo"));
+
+const aleatorio = (max, min) => {
+
+  return Math.floor(Math.random() * ((max + 1)  - min) + min )
+}
+
+for (let i = 0; i < totalNumeros; i++) {
+  console.log(aleatorio(rangoMax, rangoMin))
+} */
+
+// 3
+
+/* const verificarPrimo = valor => {
+  for (let i = 2; i <= valor-1; i++) {
+    if (valor % i == 0) {
+      return(" no es primo");
+    }
+  }
+  return(" es primo");
+}
+let numeroRepeticiones = parseInt(prompt("Dime un numero"))
+for (let i = numeroRepeticiones; i >= 2; i--) {
+  console.log(`El numero ${i + verificarPrimo(i)}`)
+}
+
+ */
+
+
+/* console.log(verificarPrimo(parseInt(prompt("Dime un numero")))) */
+
+
+// 4
+
+/* 
+const Factorial = valor => {
+  let resultado = 1
+  for(let i = 1; i <= valor; i++) {
+    resultado *= i
+  }
+
+  return resultado
+};
+
+console.log(Factorial(parseInt(prompt("Dime un numero")))) */
+
+// 5
+/* const CalcularBinario = valor => {
+  let valorBinario = ""
+  while(valor > 0.5) {
+    let  resto = (valor % 2).toString()
+    valorBinario = resto + valorBinario
+    valor = parseInt(valor / 2)
+
+  }
+  return valorBinario
+}
+
+console.log(CalcularBinario(17)) */
+
+/* 6. Crea una aplicación que nos cuente el número de cifras de un número entero positivo
+(hay que controlarlo) pedido por prompt. Crea un método que realice esta acción,
+pasando el número por parámetro devolverá el número de cifras. */
+
+/* let valor = prompt("DIme un numero");
+
+
+const NumeroCifras = val => val.toString().split("").length;
+
+
+if (parseInt(valor) < 0) {
+  console.log("Necesito un valor positivo");
+} else {
+  console.log(NumeroCifras(valor));
+}
+ */
+
+
